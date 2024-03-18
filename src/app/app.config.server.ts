@@ -4,8 +4,10 @@ import { appConfig } from './app.config';
 
 const serverConfig: ApplicationConfig = {
   providers: [
-    provideServerRendering()
+    provideServerRendering(),
+    // Add other server-specific providers as needed, e.g., for environment-specific configurations
   ]
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);
+

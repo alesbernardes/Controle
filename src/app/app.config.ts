@@ -5,5 +5,10 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+  providers: [
+    // Define routes for your application
+    provideRouter(routes),
+    // Enable client-side hydration for a smooth user experience
+    provideClientHydration()
+  ]
 };
